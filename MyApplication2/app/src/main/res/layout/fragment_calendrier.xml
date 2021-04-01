@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/CALENDRIER"
+        android:textSize="30sp"
+        android:layout_margin="30dp"
+        android:textColor="@color/Green"
+        android:layout_alignParentRight="true"
+        />
+
+    <CalendarView
+        android:layout_width="400dp"
+        android:layout_height="350dp"
+        android:layout_gravity ="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:layout_alignParentTop="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Passages"
+        android:textSize="25sp"
+        android:layout_marginTop="410dp"/>
+
+</RelativeLayout>
