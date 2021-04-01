@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/info_recyclage"
+    android:background="@color/vert_1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="?attr/actionBarSize">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/vert_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+
+    <fragment
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toTopOf="@id/nav_view"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/mobile_navigation" />
+
+
+    <Button
+        android:id="@+id/info_recyclage_txt_papier"
+        android:layout_width="306dp"
+        android:layout_height="82dp"
+        android:text="Info déchets papiers"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        app:backgroundTint="#FFD1D5DD"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/info_recyclage_txt_orga"
+        android:layout_width="306dp"
+        android:layout_height="82dp"
+        android:text="Info déchets organiques"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        app:backgroundTint="#FFD1D5DD"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="121dp" />
+
+    <Button
+        android:id="@+id/info_recyclage_txt_menager"
+        android:layout_width="306dp"
+        android:layout_height="82dp"
+        android:text="Info déchets ménagers"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        app:backgroundTint="#D1D5DD"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="215dp" />
+
+
+    <Button
+        android:id="@+id/info_recyclage_txt_alu"
+        android:layout_width="306dp"
+        android:layout_height="82dp"
+        android:text="Info déchets aluminiums"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        app:backgroundTint="#FFD1D5DD"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="313dp" />
+
+    <Button
+        android:id="@+id/info_recyclage_txt_verre"
+        android:layout_width="306dp"
+        android:layout_height="82dp"
+        android:text="Info déchets verres"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        app:backgroundTint="#FFD1D5DD"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="408dp" />
+
+    <Button
+        android:id="@+id/info_recyclage_txt_plastiques"
+        android:layout_width="306dp"
+        android:layout_height="82dp"
+        android:text="Info déchets plastiques"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        app:backgroundTint="#FFD1D5DD"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="512dp" />
+
+
+    <ImageButton
+        android:id="@+id/info_recyclage_img_papier"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:layout_margin="10dp"
+        android:src ="@drawable/info_recyclage_papier"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageButton
+        android:id="@+id/info_recyclage_img_verre"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:layout_margin="10dp"
+        android:src ="@drawable/info_recyclage_verre"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="128dp" />
+
+    <ImageButton
+        android:id="@+id/info_recyclage_img_plastique"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/info_recyclage_plastique"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-5dp"
+        tools:layout_editor_absoluteY="219dp" />
+
+    <ImageButton
+        android:id="@+id/info_recyclage_img_alu"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/info_recyclage_aluminium"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="316dp" />
+
+    <ImageButton
+        android:id="@+id/info_recyclage_img_menager"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/info_recyclage_d_chet_menager"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-5dp"
+        tools:layout_editor_absoluteY="413dp" />
+
+    <ImageButton
+        android:id="@+id/info_recyclage_img_orga"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/info_recyclage_organique"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-15dp"
+        tools:layout_editor_absoluteY="518dp"
+        android:contentDescription="TODO" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
