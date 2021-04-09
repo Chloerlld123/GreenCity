@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_logo_magnigier"
+        android:title="@string/title_dashboard" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:enabled="true"
+        android:icon="@drawable/ic_logo_calendar"
+        android:title="@string/title_calendar" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:enabled="true"
+        android:icon="@drawable/ic_logo_recycling_symbol"
+        android:title="@string/title_recycling" />
+    <item
+        android:id="@+id/navigation_recyclage"
+        android:enabled="true"
+        android:icon="@drawable/ic_logo_user"
+        android:title="@string/info_perso" />
+
+</menu>
