@@ -28,3 +28,26 @@ public class MainActivity extends AppCompatActivity {
     }
 
 }
+
+private BottomNavigationView.OnNavigationItemSelectedListener navListener=new BottomNavigationView.OnNavigationItemSelectedListener() {
+        @Override
+        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+            Fragment selectedFragment = null;
+            switch(item.getItemId()){
+                case R.id.navigation_home:
+                    selectedFragment= new produit_localisation();
+                    break;
+                case R.id.navigation_dashboard:
+                    selectedFragment= new calendrier();
+                    break;
+                case R.id.navigation_notifications:
+                    selectedFragment= new recyclage();
+                    break;
+            }
+
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,selectedFragment).commit();
+            return true;
+
+        }
+    };
+}
