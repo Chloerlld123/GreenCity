@@ -38,6 +38,7 @@
                 android:src="@drawable/ic_info_recyclage_papier">
             </ImageView>
             <Button
+                android:id="@+id/Papier"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/gris"
@@ -56,6 +57,7 @@
                 android:src="@drawable/ic_info_recyclage_verre">
             </ImageView>
             <Button
+                android:id="@+id/Verre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/gris"
@@ -74,6 +76,7 @@
                 android:src="@drawable/ic_info_recyclage_plastique">
             </ImageView>
             <Button
+                android:id="@+id/Plastique"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/gris"
@@ -92,6 +95,7 @@
                 android:src="@drawable/ic_logo_recyclage_aluminium">
             </ImageView>
             <Button
+                android:id="@+id/Aluminium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/gris"
@@ -128,6 +132,7 @@
                 android:src="@drawable/ic_info_recyclage_organique">
             </ImageView>
             <Button
+                android:id="@+id/Organique"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/gris"
