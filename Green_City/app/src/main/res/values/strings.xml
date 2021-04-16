@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">GreenCity</string>
+    <string name="Informatio_p6">Informations</string>
+    <string name="Nom_Prenom">Nom et Prénom</string>
+    <string name="Nom_numero_rue">Nom et Numéro de Rue</string>
+    <string name="Code_Postal">Code Postal</string>
+    <string name="Ville">Ville</string>
+    <string name="title_search">Search</string>
+    <string name="title_calendar">Calendrier</string>
+    <string name="title_dashboard">Recherche</string>
+    <string name="title_recycling">Recyclage</string>
+    <string name="title_user">User</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <string name="title_activity_2">MainActivity</string>
+    <string name="info_perso">Informations personelles</string>
+    <string name="nom_produit">Entrer le nom du produit</string>
+    <string name="nom_ville">Entrer le nom de la ville</string>
+    <string name="inscription">Inscription</string>
+    <string name="num_rue">Entrer votre numéro de rue</string>
+    <string name="nom_rue">Entrer votre nom de rue</string>
+    <string name="code_postal">Entrer votre code postal</string>
+    <string name="validation">Valider</string>
+    <string name="skip">Passer</string>
+    <string name="info_dechet_papier">Info déchets papier</string>
+    <string name="info_dechet_verres">Info déchets verres</string>
+    <string name="info_dechet_plastique">Info déchets plastiques</string>
+    <string name="info_dechet_aluminium">Info déchets aluminium</string>
+    <string name="info_dechet_menagers">Info déchets ménagers</string>
+    <string name="info_dechet_organiques">Info déchets organiques</string>
+    <string name="ramassage_dechets">Prochain ramassage de déchets</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_launcher">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_search">MainActivity</string>
+    <string name="title_activity_information">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_notifications">Notifications</string>
+</resources>
