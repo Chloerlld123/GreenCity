@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="suivant" type="id">suivant</item>
+    <item name="Papier" type="id">Paper</item>
+    <item name="Verre" type="id">Glass</item>
+    <item name="Plastique" type="id">Plastic</item>
+    <item name="Organique" type="id">Organics</item>
+    <item name="Menager" type="id">household</item>
+    <item name="Aluminium" type="id">Aluminium</item>
+</resources>

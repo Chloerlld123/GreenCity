@@ -47,7 +47,7 @@ public class RecyclingFragment extends Fragment {
                 startActivity(intent);
             }
         });
-        Verres = (Button) findViewById(R.id.Verres);
+        Verres = (Button) findViewById(R.id.Verre);
         Verres.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

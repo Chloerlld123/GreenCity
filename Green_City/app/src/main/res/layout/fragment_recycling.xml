@@ -57,7 +57,7 @@
                 android:src="@drawable/ic_info_recyclage_verre">
             </ImageView>
             <Button
-                android:id="@id/Verres"
+                android:id="@id/Verre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/gris"

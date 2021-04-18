@@ -38,4 +38,13 @@
     <string name="title_activity_information">MainActivity</string>
     <string name="title_home">Home</string>
     <string name="title_notifications">Notifications</string>
+
+    <string name="button_paper">Papier</string>
+    <string name="button_glass">Verre</string>
+    <string name="button_plactic">Plastique</string>
+    <string name="button_alu">Aluminium</string>
+    <string name="button_household">Menager</string>
+    <string name="button_organics">Organique</string>
+
+    <string name="suivant">suivant</string>
 </resources>

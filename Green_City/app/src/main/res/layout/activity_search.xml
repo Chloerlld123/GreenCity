@@ -39,7 +39,8 @@
             android:inputType="textPostalAddress"
             android:text="@string/nom_ville"
             android:textColor="@color/black"
-            android:gravity="center_horizontal" />
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"/>
 
         <EditText
             android:id="@+id/editTextName"
@@ -52,7 +53,21 @@
             android:text="@string/nom_produit"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+        <Button
+            android:id="@id/suivant"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/gris"
+            android:layout_marginLeft="120dp"
+            android:height="60dp"
+            android:textSize="20sp"
+            android:text="@string/suivant"
+            android:textColor="@color/black" />
+        Aa
+
     </LinearLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
