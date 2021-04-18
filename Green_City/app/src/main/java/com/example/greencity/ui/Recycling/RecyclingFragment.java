@@ -15,6 +15,13 @@ import androidx.lifecycle.ViewModelProvider;
 import com.example.greencity.R;
 
 public class RecyclingFragment extends Fragment {
+    
+    private Button Papier;
+    private Button Verres;
+    private Button Plastique;
+    private Button Aluminium;
+    private Button Menager;
+    private Button Organique;
 
     private RecyclingViewModel recyclingViewModel;
 
@@ -31,5 +38,55 @@ public class RecyclingFragment extends Fragment {
             }
         });
         return root;
+        Papier = (Button) findViewById(R.id.Papier);
+        Papier.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(RecyclingFragment.this, PaperWasteActivity.class);
+                startActivity(intent);
+            }
+        });
+        Verres = (Button) findViewById(R.id.Verres);
+        Verres.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(RecyclingFragment.this, GlassWasteActivity.class);
+                startActivity(intent);
+            }
+        });
+        Plastique = (Button) findViewById(R.id.Plastique);
+        Plastique.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(RecyclingFragment.this, PlasticWasteActivity.class);
+                startActivity(intent);
+            }
+        });
+        Aluminium = (Button) findViewById(R.id.Aluminium);
+        Aluminium.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(RecyclingFragment.this, AluminiumWasteActivity.class);
+                startActivity(intent);
+            }
+        });
+        Menager = (Button) findViewById(R.id.Menager);
+        Menager.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(RecyclingFragment.this, HouseholdWasteActivity.class);
+                startActivity(intent);
+            }
+        });
+        Organique = (Button) findViewById(R.id.Organique);
+        Organique.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(RecyclingFragment.this, OrganicsWasteActivity.class);
+                startActivity(intent);
+            }
+        });
+        
+        
     }
 }
