@@ -10,7 +10,7 @@ public class RecyclingViewModel extends ViewModel {
 
     public RecyclingViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is dashboard fragment");
+        mText.setValue("This is recycling fragment");
     }
 
     public LiveData<String> getText() {

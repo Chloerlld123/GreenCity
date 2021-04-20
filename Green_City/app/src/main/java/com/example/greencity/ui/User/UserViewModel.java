@@ -10,10 +10,11 @@ public class UserViewModel extends ViewModel {
 
     public UserViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is notifications fragment");
+        mText.setValue("This is user fragment");
     }
 
     public LiveData<String> getText() {
         return mText;
     }
+
 }
