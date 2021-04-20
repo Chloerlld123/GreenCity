@@ -37,7 +37,7 @@ public class RecyclingFragment extends Fragment {
         recyclingViewModel =
                 new ViewModelProvider(this).get(RecyclingViewModel.class);
         View root = inflater.inflate(R.layout.fragment_recycling, container, false);
-        final TextView textView = container.findViewById(R.id.text_dashboard);
+        final TextView textView = container.findViewById(R.id.navigation_recycling);
         recyclingViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {

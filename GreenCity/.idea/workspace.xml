@@ -25,7 +25,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c478c33a-5c4c-4a90-b177-cb109949eb21" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Green_City/app/src/main/java/com/example/greencity/ui/Recycling/RecyclingFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Green_City/app/src/main/java/com/example/greencity/ui/Recycling/RecyclingFragment.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
