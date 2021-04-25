@@ -1,5 +1,7 @@
 package com.example.greencity.ui.Recycling;
 
+import androidx.appcompat.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -32,10 +34,30 @@ public class RecyclingFragment extends Fragment {
 
     private RecyclingViewModel recyclingViewModel;
 
+    public RecyclingFragment(RecyclingViewModel recyclingViewModel, int contentLayoutId, Button papier, Button verre, Button plastique, Button aluminium, Button menager, Button organique) {
+        super(contentLayoutId);
+        this.recyclingViewModel = recyclingViewModel;
+        Papier = papier;
+        Verre = verre;
+        Plastique = plastique;
+        Aluminium = aluminium;
+        Menager = menager;
+        Organique = organique;
+    }
+
+    public RecyclingFragment(Button papier, Button verre, Button plastique, Button aluminium, Button menager, Button organique, RecyclingViewModel recyclingViewModel) {
+        Papier = papier;
+        Verre = verre;
+        Plastique = plastique;
+        Aluminium = aluminium;
+        Menager = menager;
+        Organique = organique;
+        this.recyclingViewModel = recyclingViewModel;
+    }
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        recyclingViewModel =
-                new ViewModelProvider(this).get(RecyclingViewModel.class);
+        recyclingViewModel = new ViewModelProvider(this).get(RecyclingViewModel.class);
         View root = inflater.inflate(R.layout.fragment_recycling, container, false);
         final TextView textView = container.findViewById(R.id.navigation_recycling);
         recyclingViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
