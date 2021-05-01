@@ -66,7 +66,6 @@
             android:textSize="20sp"
             android:text="@string/suivant"
             android:textColor="@color/black" />
-        Aa
 
     </LinearLayout>
 

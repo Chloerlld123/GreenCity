@@ -1,6 +1,7 @@
 package com.example.greencity;
 
 import android.os.Bundle;
+import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -10,7 +11,12 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import java.util.List;
+
 public class SearchActivity extends AppCompatActivity {
+
+    private DataBaseVille databaseville ;
+    private TextView FicheVille ; // crée un pointeur de type Text View
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +31,24 @@ public class SearchActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.navigation_search);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(navView, navController);
+
+        //FicheVille = (TextView) findViewById(R.id.FicheVille) ; // find view renvoie un view de type TextView ,cette fct , id : class
+        databaseville = new DataBaseVille(this) ;
+
+        databaseville.insertProduit("compote", "bac jaune ");
+        databaseville.insertProduit("journal", "bac jaune ");
+        databaseville.insertProduit("bocaux ", "bac verre ");
+
+        List<VilleDatas> produits = databaseville.lectureProduits() ; // devrait afficher tous ce qui a dans ma base
+        String produit1 = " compote" ;
+        for (VilleDatas produit : produits){
+            //FicheVille.append(produit.toString() + "\n\n");
+            if (produit.equals(produit1)){
+                FicheVille.append(produit.toStringProduit() + "\n\n");
+            }
+        }
+
+        databaseville.close();// ferme la connexion avec la bd
     }
 
 }
