@@ -16,7 +16,7 @@ import java.util.List;
 public class SearchActivity extends AppCompatActivity {
 
     private DataBaseVille databaseville ;
-    private TextView FicheVille ; // crée un pointeur de type Text View
+    private TextView FicheProduit ; // crée un pointeur de type Text View
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +32,7 @@ public class SearchActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(navView, navController);
 
-        //FicheVille = (TextView) findViewById(R.id.FicheVille) ; // find view renvoie un view de type TextView ,cette fct , id : class
+        FicheProduit = (TextView) findViewById(R.id.FicheProduit) ; // find view renvoie un view de type TextView ,cette fct , id : class
         databaseville = new DataBaseVille(this) ;
 
         databaseville.insertProduit("compote", "bac jaune ");
@@ -42,9 +42,9 @@ public class SearchActivity extends AppCompatActivity {
         List<VilleDatas> produits = databaseville.lectureProduits() ; // devrait afficher tous ce qui a dans ma base
         String produit1 = " compote" ;
         for (VilleDatas produit : produits){
-            //FicheVille.append(produit.toString() + "\n\n");
+            //FicheProduit.append(produit.toString() + "\n\n");
             if (produit.equals(produit1)){
-                FicheVille.append(produit.toStringProduit() + "\n\n");
+                FicheProduit.append(produit.toStringProduit() + "\n\n");
             }
         }
 
