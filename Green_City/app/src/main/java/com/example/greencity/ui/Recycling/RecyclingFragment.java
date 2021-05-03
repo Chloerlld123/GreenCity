@@ -66,15 +66,17 @@ public class RecyclingFragment extends Fragment {
                 textView.setText(s);
             }
         });
-        return root;
-        Papier = textView.findViewById(R.id.Papier);
-        Papier.setOnClickListener(new View.OnClickListener() {
+       
+        Papier = root.findViewById(R.id.Papier);
+        Papier.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View v) {
-               final Intent intent = new Intent(getActivity(), PaperWasteActivity.class);
+            public void onClick(View root){
+                Intent intent = new Intent(getActivity(), papier.class);
                 startActivity(intent);
             }
         });
+        return root;
+    }
         Verre = (Button) container.findViewById(R.id.Verre);
         Verre.setOnClickListener(new View.OnClickListener() {
             @Override
