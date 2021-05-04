@@ -71,7 +71,7 @@ public class RecyclingFragment extends Fragment {
         Papier.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View root){
-                Intent intent = new Intent(getActivity(), papier.class);
+                Intent intent = new Intent(getActivity(), PaperWasteActivity.class);
                 startActivity(intent);
             }
         });
