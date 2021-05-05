@@ -77,47 +77,47 @@ public class RecyclingFragment extends Fragment {
         });
         return root;
     }
-        Verre = (Button) container.findViewById(R.id.Verre);
+        Verre = root.findViewById(R.id.Verre);
         Verre.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                final Intent intent = new Intent(this, GlassWasteActivity.class);
+            public void onClick(View root) {
+                final Intent intent = new Intent(getActivity(), GlassWasteActivity.class);
                 startActivity(intent);
             }
         });
-        Plastique = (Button) container.findViewById(R.id.Plastique);
+        Plastique = root.findViewById(R.id.Plastique);
         Plastique.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-               final Intent intent = new Intent(this, PlasticWasteActivity.class);
+            public void onClick(View root) {
+               final Intent intent = new Intent(getActivity(), PlasticWasteActivity.class);
                 startActivity(intent);
             }
         });
-        Aluminium = (Button) container.findViewById(R.id.Aluminium);
+        Aluminium = root.findViewById(R.id.Aluminium);
         Aluminium.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                final Intent intent = new Intent(this, AluminiumWasteActivity.class);
+            public void onClick(View root) {
+                final Intent intent = new Intent(getActivity(), AluminiumWasteActivity.class);
                 startActivity(intent);
             }
         });
-        Menager = (Button) container.findViewById(R.id.Menager);
+        Menager = root.findViewById(R.id.Menager);
         Menager.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                final Intent intent = new Intent(this, HouseholdWasteActivity.class);
+            public void onClick(View root) {
+                final Intent intent = new Intent(getActivity(), HouseholdWasteActivity.class);
                 startActivity(intent);
             }
         });
-        Organique = (Button) container.findViewById(R.id.Organique);
+        Organique = root.findViewById(R.id.Organique);
         Organique.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                final Intent intent = new Intent(this, OrganicsWasteActivity.class);
+            public void onClick(View root) {
+                final Intent intent = new Intent(getActivity(), OrganicsWasteActivity.class);
                 startActivity(intent);
             }
         });
         
-        
+       //autres buttons 
     }
 }
