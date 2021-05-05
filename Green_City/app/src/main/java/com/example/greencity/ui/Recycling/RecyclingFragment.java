@@ -76,7 +76,7 @@ public class RecyclingFragment extends Fragment {
             }
         });
         return root;
-    }
+
         Verre = root.findViewById(R.id.Verre);
         Verre.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -89,7 +89,7 @@ public class RecyclingFragment extends Fragment {
         Plastique.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View root) {
-               final Intent intent = new Intent(getActivity(), PlasticWasteActivity.class);
+                final Intent intent = new Intent(getActivity(), PlasticWasteActivity.class);
                 startActivity(intent);
             }
         });
@@ -112,11 +112,13 @@ public class RecyclingFragment extends Fragment {
         Organique = root.findViewById(R.id.Organique);
         Organique.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View root) {
+            public void onClick (View  root) {
                 final Intent intent = new Intent(getActivity(), OrganicsWasteActivity.class);
                 startActivity(intent);
             }
         });
+    }
+
         
        //autres buttons 
     }
