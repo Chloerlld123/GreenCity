@@ -35,18 +35,23 @@ public class SearchActivity extends AppCompatActivity {
         FicheProduit = (TextView) findViewById(R.id.FicheProduit) ; // find view renvoie un view de type TextView ,cette fct , id : class
         databaseville = new DataBaseVille(this) ;
 
-        databaseville.insertProduit("compote", "bac jaune ");
-        databaseville.insertProduit("journal", "bac jaune ");
-        databaseville.insertProduit("bocaux ", "bac verre ");
+        databaseville.insertProduit("paris", "compote", "bac jaune");
+        databaseville.insertProduit("marseille","journal", "bac jaune ");
+        databaseville.insertProduit("bordeaux","bocaux", "bac verre ");
 
-        List<VilleDatas> produits = databaseville.lectureProduits() ; // devrait afficher tous ce qui a dans ma base
+        /*List<VilleDatas> produits = databaseville.lectureProduits() ; // devrait afficher tous ce qui a dans ma base
         String produit1 = " compote" ;
         for (VilleDatas produit : produits){
             //FicheProduit.append(produit.toString() + "\n\n");
             if (produit.equals(produit1)){
                 FicheProduit.append(produit.toStringProduit() + "\n\n");
             }
-        }
+        }*/
+        String resultat = "";
+        String ville1 = "bordeaux" ;
+        String produit1 = "bocaux" ;
+        resultat=  databaseville.selection(ville1, produit1);
+        FicheProduit.append(resultat.toString() + "\n\n");
 
         databaseville.close();// ferme la connexion avec la bd
     }
