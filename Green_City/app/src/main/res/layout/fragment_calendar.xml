@@ -35,6 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/gris"
+            android:id="@+id/text_home"
             android:layout_margin="5dp"
             android:text="@string/ramassage_dechets"
             android:textColor="@color/black"

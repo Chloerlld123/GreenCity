@@ -4,17 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:background="@color/vert_1">
+    android:background="@color/vert_1"
+    android:id="@+id/fullscreen">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/vert_1"
-        android:orientation="vertical"/>
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/vert_1"
-        android:paddingBottom="60dp"
-        android:paddingLeft="23dp"
-        android:src="@drawable/ic_logo_accueil"/>
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="685dp"
+            android:background="@color/vert_1"
+            android:paddingBottom="60dp"
+            android:paddingLeft="23dp"
+            android:src="@drawable/ic_logo_accueil"/>
+        <Button
+            android:id="@+id/logowithleaf"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:height="60dp"
+            android:text="@string/Start"
+            android:textColor="@color/black" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

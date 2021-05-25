@@ -24,7 +24,6 @@ import com.example.greencity.PlasticWasteActivity;
 import com.example.greencity.R;
 
 public class RecyclingFragment extends Fragment {
-    
     private Button Papier;
     private Button Verre;
     private Button Plastique;
@@ -66,7 +65,7 @@ public class RecyclingFragment extends Fragment {
                 textView.setText(s);
             }
         });
-       
+
         Papier = root.findViewById(R.id.Papier);
         Papier.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -119,7 +118,7 @@ public class RecyclingFragment extends Fragment {
         });
     }
 
-        
-       //autres buttons 
-    }
+
+    //autres buttons
+
 }
